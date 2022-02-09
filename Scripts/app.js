@@ -3,27 +3,40 @@ var currentNode;
 
 function checkPage()
 {
+    //Changes product link to projects using DOM
     currentNode = document.getElementById( "products" );
-    currentNode.innerHTML =`<li id ="products"><a href="products.html"><i class="fa-solid fa-border-all"></i> Projects</a></li>`;
-    var path = window.location.pathname
+    currentNode.innerHTML =`<li id ="products"><a href="products.html">
+    <i class="fa-solid fa-border-all"></i> Projects</a></li>`;
+
+    //Gets current url pathname to determine current page
+    var path = window.location.pathname;
     var page = path.split("/").pop();
 
+    //Builds the index page when page open
     if (page == "index.html")
     {
         indexPage();
     }
+
+    //Builds the products page when page open
     else if (page == "products.html")
     {
         productsPage();
     }
+
+    //Builds the services page when page open
     else if (page == "services.html")
     {
         servicesPage();
     }
+
+    //Builds the about page when page open
     else if (page == "about.html")
     {
         aboutPage();
     }
+
+    //Builds the contact page when page open
     else if (page == "contact.html")
     {
         contactPage();
@@ -34,7 +47,8 @@ function checkPage()
 //Builds the index page when page open
 function indexPage()
 {
-    var indexMessage = document.getElementById( "indexMessage" );;
+    //Creates and outputs index message
+    var indexMessage = document.getElementById( "indexMessage" );
     indexMessage.innerHTML = "Welcome to our home page for WEBD-4202 Lab 1. This page was created by Tyler Henry and Tyler Osborne." + 
     " Please use the nav bar to get to the other pages.";
 }
@@ -54,7 +68,16 @@ function servicesPage()
 //Builds the  page when page open
 function aboutPage()
 {
-    
+    //Creates message variable for Tyler Henry about section
+    var henryMessage = document.getElementById("henryMessage");
+    henryMessage.innerHTML ="My name is Tyler Henry and I am currently a second year student in the Computer Programming and Analysis program"+
+    " at Durham college. While partaking in school I also work part time at Lowe's Canada as a lumber associate. After I gradute this course I am"+
+    " hoping to be able to travel to Japan for a few week vacation before I do my best to try and find a career."+
+    `<br><a href="https://www.linkedin.com/in/tyler-henry-271711227/">Linkdin Profile</a>`;
+
+    //Creates message variable for Tyler Osborne about section
+    var osborneMessage = document.getElementById("osborneMessage");
+    osborneMessage.innerHTML ="Placeholder"
 }
 
 //Builds the contact page when page open
@@ -96,28 +119,6 @@ function updateTime()
     }
                   
 } 
-function replaceCurrent()
-{
-   var newNode = createNewNode();
-   currentNode.parentNode.replaceChild( newNode, currentNode );
-   switchTo( newNode );
-}
-function createNewNode( )
-{
-   var newNode = document.createElement( "p" );
-   var nodeId = "projects";
-   newNode.setAttribute( "id", nodeId ); // set newNode's id
-   var text = "Projects";
-   newNode.appendChild( document.createTextNode( text ) );
-   return newNode;
-} 
-function switchTo( newNode )
-{
-   
-   currentNode = newNode;
-   
-   document.getElementById( "products" ).value = 
-      currentNode.getAttribute( "id" );
-}
+
 //On launch check which page is the current page
 window.addEventListener( "load", checkPage, false );

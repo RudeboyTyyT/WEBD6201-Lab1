@@ -26,3 +26,9 @@ ul {
     background-image: url("Images/bonfire.png");
     background-color: #cccccc;
    }
+   .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
