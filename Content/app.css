@@ -22,3 +22,7 @@ ul {
   li a:hover {
     background-color: #111;
   }
+  body {
+    background-image: url("Images/bonfire.png");
+    background-color: #cccccc;
+   }
