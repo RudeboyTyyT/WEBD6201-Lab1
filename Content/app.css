@@ -5,6 +5,18 @@ ul {
     overflow: hidden;
     background-color: #333;
   }
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  color: white;
+}
+table {
+  background-color: #333;
+  color: white;
+}
   
   li {
     float: right;
