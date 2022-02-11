@@ -1,5 +1,5 @@
 /*  Authors: Tyler Osborne & Tyler Henry
-*   Student IDs: 100757532 &
+*   Student IDs: 100757532 & 100593023
 *   Version: Lab 1
 *   Date Completed: 2022-02-10
 *   Description: This javascript populates the webpages with information
@@ -112,7 +112,7 @@ function productsPage()
     // Project 3 img
      currentNode = document.getElementById("project3Img");
      newNode = document.createElement("img")
-     newNode.setAttribute("src", "Content/Images/project3.JPG");
+     newNode.setAttribute("src", "./Content/Images/project3.JPG");
      newNode.setAttribute("width", "200px");
      newNode.setAttribute("height", "200px");
      currentNode.appendChild(newNode);
