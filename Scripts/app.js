@@ -88,7 +88,7 @@ function productsPage()
     // Project 1 img
      currentNode = document.getElementById("project1Img");
      var newNode = document.createElement("img")
-     newNode.setAttribute("src", "Content/Images/project1.jpg");
+     newNode.setAttribute("src", "Content/Images/project1.JPG");
      newNode.setAttribute("width", "200px");
      newNode.setAttribute("height", "200px");
      currentNode.appendChild(newNode);
@@ -101,7 +101,7 @@ function productsPage()
     // Project 2 img
      currentNode = document.getElementById("project2Img");
      newNode = document.createElement("img")
-     newNode.setAttribute("src", "Content/Images/project2.jpg");
+     newNode.setAttribute("src", "Content/Images/project2.JPG");
      newNode.setAttribute("width", "200px");
      newNode.setAttribute("height", "200px");
      currentNode.appendChild(newNode);
@@ -112,7 +112,7 @@ function productsPage()
     // Project 3 img
      currentNode = document.getElementById("project3Img");
      newNode = document.createElement("img")
-     newNode.setAttribute("src", "Content/Images/project3.jpg");
+     newNode.setAttribute("src", "Content/Images/project3.JPG");
      newNode.setAttribute("width", "200px");
      newNode.setAttribute("height", "200px");
      currentNode.appendChild(newNode);
@@ -130,7 +130,7 @@ function servicesPage()
     // Service 1 img
     currentNode = document.getElementById("service1Img");
     var newNode = document.createElement("img")
-    newNode.setAttribute("src", "Content/Images/service1.jpg");
+    newNode.setAttribute("src", "Content/Images/service1.JPG");
     newNode.setAttribute("width", "200px");
     newNode.setAttribute("height", "200px");
     currentNode.appendChild(newNode);
@@ -141,7 +141,7 @@ function servicesPage()
    // Service 2 img
     currentNode = document.getElementById("service2Img");
     newNode = document.createElement("img")
-    newNode.setAttribute("src", "Content/Images/service2.jpg");
+    newNode.setAttribute("src", "Content/Images/service2.JPG");
     newNode.setAttribute("width", "200px");
     newNode.setAttribute("height", "200px");
     currentNode.appendChild(newNode);
@@ -152,7 +152,7 @@ function servicesPage()
    // Service 3 img
     currentNode = document.getElementById("service3Img");
     newNode = document.createElement("img")
-    newNode.setAttribute("src", "Content/Images/service3.jpg");
+    newNode.setAttribute("src", "Content/Images/service3.JPG");
     newNode.setAttribute("width", "200px");
     newNode.setAttribute("height", "200px");
     currentNode.appendChild(newNode);
