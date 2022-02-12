@@ -24,11 +24,12 @@ function checkPage()
     // Creates the humanresources link to append
     var newNavLink = document.createElement("li");
     var newA = document.createElement("a");
+    var newI=document.createElement("i");
     newA.setAttribute("id", "humanresources");
     newA.setAttribute("href", "humanresources.html");
-    newA.setAttribute("class", "fas fa-user-tie");
-    var newText = document.createTextNode(" Human Resources");
-    newA.appendChild(newText);
+    newI.setAttribute("class", "fas fa-user-tie");
+    newA.textContent =" Human Resources";
+    newA.prepend(newI);
     newNavLink.appendChild(newA);
 
     // Adds new human resoursces link to nav bar
